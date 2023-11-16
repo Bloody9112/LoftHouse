@@ -9,7 +9,7 @@
     min-height: 840px;
 
     background: linear-gradient(180deg, #242b33 11.98%, rgba(45, 52, 60, 0.38) 51.04%, #242b33 92.19%),
-        url('./../../img/header/header-bg.jpg');
+        url("/img/header/header-bg.jpg");
 }
 
 .header__top-row {
@@ -37,6 +37,6 @@
 
 .header__footer {
     display: grid;
-    grid-template-columns:  1fr 1fr;
-    gap: 50px   ;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
 }
