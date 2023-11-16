@@ -2,8 +2,7 @@
     position: relative;
     font-size: 18px;
 
-    &--map,
-    &--tel {
+    &--map, &--tel {
         padding-left: 35px;
 
         &::before {
@@ -11,9 +10,13 @@
 
             position: absolute;
             left: 0px;
-            top: 0px;
+            top: 50%;
             width: 21px;
             height: 21px;
+            transform: translate(0%, -50%);
+
+            background-repeat: no-repeat;
+            background-position: center;
         }
     }
 

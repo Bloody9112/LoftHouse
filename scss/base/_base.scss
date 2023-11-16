@@ -9,7 +9,7 @@ body {
 
 a {
     color: $white;
-    transition:  color 0.2s ease-in;
+    transition: color 0.2s ease-in;
     &:hover {
         color: $accent;
     }
@@ -18,7 +18,7 @@ a {
 .container {
     margin: 0 auto; // вистраюємо контейнер по центур сторінки
     padding: 0 15px;
-    width: 1140px; // по дефолту було 1110, збільшуємо через падінг
+    max-width: 1140px; // по дефолту було 1110, збільшуємо через падінг
 }
 
 .header__footer-text-right {

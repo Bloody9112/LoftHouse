@@ -104,7 +104,7 @@ a:hover {
 .container {
   margin: 0 auto;
   padding: 0 15px;
-  width: 1140px;
+  max-width: 1140px;
 }
 
 .header__footer-text-right {
@@ -129,12 +129,12 @@ a:hover {
 
 .header__title {
   position: relative;
-  text-align: center;
-  color: #d4c17f;
-  font-family: "Playfair Display", serif;
-  font-size: 48px;
-  font-weight: 700;
   padding-bottom: 121px;
+  text-align: center;
+  font-size: 48px;
+  font-family: "Playfair Display", serif;
+  color: #d4c17f;
+  font-weight: 700;
 }
 
 .header__title-icon {
@@ -171,9 +171,12 @@ a:hover {
   content: "";
   position: absolute;
   left: 0px;
-  top: 0px;
+  top: 50%;
   width: 21px;
   height: 21px;
+  transform: translate(0%, -50%);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .info--map::before {
   background-image: url("./../img/header/map.svg");
