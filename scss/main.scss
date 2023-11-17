@@ -4,6 +4,10 @@
 @import './base/base';
 
 // Blocks 
-@import './blocks/header';
-@import './blocks/nav';
-@import './blocks/info';
+@import './blocks/header/header';
+@import './blocks/header/nav';
+@import './blocks/main/main';
+@import './blocks/main/info';
+@import './blocks/main/benefits';
+@import './blocks/main/apartments';
+@import './blocks/main/card';

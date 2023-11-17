@@ -1,0 +1,19 @@
+.apartments {
+
+    margin-top: -80px;
+
+    &--title {
+        color: $accent;
+        font-family: $font-accent;
+        font-size: 36px;
+        font-weight: 700;
+        margin-bottom: 88px;
+    }
+
+    &--cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        // grid-template-columns: repeat(auto-fit, minmax(290px, 1fr)); // Варіант з адаптивом під мобілку
+        gap: 30px;
+    }
+}

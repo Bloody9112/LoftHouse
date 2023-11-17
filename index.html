@@ -11,42 +11,93 @@
 
 <body>
     <header class="header">
-        <div class="header__top">
-            <div class="header__top-row container">
-                <a href="#!" class="header__logo">
-                    <img src="./img/logo.svg" alt="LoftHouse" class="header__logo-image">
+        <div class="header--top">
+            <div class="header--top-row container">
+                <a href="#!" class="header--logo">
+                    <img src="./img/logo.svg" alt="LoftHouse" class="header--logo-image">
                 </a>
-                <div class="header__nav">
+                <div class="header--nav">
                     <nav class="nav">
-                        <ul class="nav__list">
-                            <li class="nav__list-item"><a href="#!" class="nav__link">Про комплекс</a></li>
-                            <li class="nav__list-item"><a href="#!" class="nav__link">Район</a></li>
-                            <li class="nav__list-item"><a href="#!" class="nav__link">Каталог квартир</a></li>
-                            <li class="nav__list-item"><a href="#!" class="nav__link">Ипотека</a></li>
-                            <li class="nav__list-item"><a href="#!" class="nav__link">Контакты</a></li>
+                        <ul class="nav--list">
+                            <li class="nav--list-item"><a href="#!" class="nav__link">Про комплекс</a></li>
+                            <li class="nav--list-item"><a href="#!" class="nav__link">Район</a></li>
+                            <li class="nav--list-item"><a href="#!" class="nav__link">Каталог квартир</a></li>
+                            <li class="nav--list-item"><a href="#!" class="nav__link">Ипотека</a></li>
+                            <li class="nav--list-item"><a href="#!" class="nav__link">Контакты</a></li>
                         </ul>
                     </nav>
                 </div>
             </div>
         </div>
+    </header>
 
-        <div class="container">
-            <h1 class="header__title">
-                Житловий комплекс <br>
-                в історичному центрі
-                <a href="#benefitts">
-                    <img src="./img/header/mouse.svg" alt="Scroll next" class="header__title-icon">
-                </a>
-            </h1>
-        </div>
+    <main class="main">
+        <h1 class="main--first-screen_title">
+            Житловий комплекс <br>
+            в історичному центрі
+            <a href="#benefitts">
+                <img src="./img/header/mouse.svg" alt="Scroll next" class="main--title-icon">
+            </a>
+        </h1>
 
-        <div class="header__footer container">
-            <div class="header__footer-text-right">
+        <div class="main--first-screen_buttons container">
+            <div class="main--buttons-text-right">
                 <a href="#section-map" class="info info--map">вул. Степана Бандери 12/6</a>
             </div>
             <a href="tel:+380678745738" class="info info--tel">38 (067) 87-457-38</a>
         </div>
-    </header>
+
+        <section class="benefits container">
+                <div class="benefits--row">
+                    <div class="benefits--item">
+                        <img src="./img/main/benefits/bench.svg" alt="bench" class="benefits--item-image">
+                        <div class="benefits--item-text">Поруч є історичні <br> парки та сквери</div>
+                    </div>
+                    <div class="benefits--item">
+                        <img src="./img/main/benefits/building.svg" alt="building" class="benefits--item-image">
+                        <div class="benefits--item-text">Повністю облаштований</div>
+                    </div>
+                    <div class="benefits--item">
+                        <img src="./img/main/benefits/fountain.svg" alt="fountain" class="benefits--item-image">
+                        <div class="benefits--item-text">10 фонтанів на території</div>
+                    </div>
+                    <div class="benefits--item">
+                        <img src="./img/main/benefits/bicycle.svg" alt="bicycle" class="benefits--item-image">
+                        <div class="benefits--item-text">6 км велодоріжок</div>
+                    </div>
+                </div>
+        </section>
+
+        <section class="apartments container">
+                <div class="apartments--title">
+                    <h2>Наші квартири</h2>
+                </div>
+                <div class="apartments--cards">
+
+                    <a href="#!" class="card">
+                        <img class="card--img" src="./img/main/appartments/01.jpg" alt="app-first">
+                        <h3 class="card--title">Пентхаус “Loft Олімп”</h3>
+                    </a> 
+
+                    <a href="#!" class="card">
+                        <img class="card--img" src="./img/main/appartments/02.jpg" alt="app-second">
+                        <h3 class="card--title">Апартаменты “Nice Loft”</h3>
+                    </a> 
+
+                    <a href="#!" class="card">
+                        <img class="card--img" src="./img/main/appartments/03.jpg" alt="app-third">
+                        <h3 class="card--title">Апартаменти “Loft Studio”</h3>
+                    </a> 
+
+                    <a href="#!" class="card">
+                        <img class="card--img" src="./img/main/appartments/04.jpg" alt="app-fourth">
+                        <h3 class="card--title">Loft квартира “Престиж”</h3>
+                    </a> 
+
+                </div>
+        </section>
+        
+    </main>
 </body>
 
 
