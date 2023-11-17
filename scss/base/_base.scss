@@ -1,13 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Raleway:wght@400;700&family=Roboto:wght@300&display=swap");
 
 body {
-    font-family: $font-main;
-    color: $white;
-    font-size: 16px;
+    
     display: flex;
     flex-direction: column;
+    font-family: $font-main;
+    color: $white;
+
+    font-size: 16px;
     padding-top: 30px;
     padding-bottom: 74px;
+
+    overflow-x: hidden;
+	scrollbar-width: none;
+    -ms-overflow-style: none;
 
     min-height: 840px;
 
