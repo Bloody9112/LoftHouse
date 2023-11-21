@@ -1,0 +1,57 @@
+.feedback {
+
+    &--title {
+        color: $accent;
+        font-family: $font-accent;
+        font-size: 36px;
+        font-weight: 700;
+        margin-bottom: 38px;
+    }
+
+    &--form {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 30px;
+        align-items: center;
+
+        &-input {
+            height: 50px;
+            padding: 12px;
+            text-align: center;
+            background-color: rgba(255, 255, 255, 0.2);
+            color: $white;
+            font-size: 14px;
+            transition: background-color 0.2s ease-in;
+
+            &::placeholder {
+                color: $placeholder;
+            }
+
+            &:focus {
+                background-color: rgba(255, 255, 255, 0.25);
+            }
+        }
+
+        &-privacy {
+            font-size: 13px;
+            color: $privacy;
+            text-align: center;
+            line-height: 16px; /* 123.077% */
+        }
+
+        &-button {
+            height: 50px;
+            padding: 12px;
+            font-size: 16px;
+            color: $white;
+            font-weight: 700px;
+            text-align: center;
+            background-color: $accent;
+            transition: background-color 0.2s ease-in;
+
+            &:hover {
+                background-color: saturate($accent, 20%);
+            }
+        }
+    }
+}

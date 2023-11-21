@@ -356,3 +356,101 @@ a:hover {
 .form--wrapper-form .form--cta-button:hover {
   background-color: #e5ca6e;
 }
+
+.video {
+  text-align: center;
+  margin-top: -200px;
+}
+.video--link {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+}
+.video--link::before {
+  content: "";
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  background: rgba(36, 43, 51, 0.75);
+  transition: background-color 0.2s ease-in;
+}
+.video--link:hover::before {
+  background: rgba(36, 43, 51, 0.65);
+}
+.video--icon {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.2s ease-in;
+}
+.video--link:hover .video--icon {
+  transform: translate(-50%, -50%) scale(1.1);
+  filter: saturate(1.5);
+}
+
+.map {
+  padding: 180px 0;
+  margin: -200px 0;
+}
+.map--title {
+  color: #d4c17f;
+  font-family: "Playfair Display", serif;
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 88px;
+}
+.map--location-geo {
+  height: 350px;
+  background: #626262;
+}
+
+.feedback--title {
+  color: #d4c17f;
+  font-family: "Playfair Display", serif;
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 38px;
+}
+.feedback--form {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  align-items: center;
+}
+.feedback--form-input {
+  height: 50px;
+  padding: 12px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  font-size: 14px;
+  transition: background-color 0.2s ease-in;
+}
+.feedback--form-input::placeholder {
+  color: #BEBEBE;
+}
+.feedback--form-input:focus {
+  background-color: rgba(255, 255, 255, 0.25);
+}
+.feedback--form-privacy {
+  font-size: 13px;
+  color: #E7E7E7;
+  text-align: center;
+  line-height: 16px; /* 123.077% */
+}
+.feedback--form-button {
+  height: 50px;
+  padding: 12px;
+  font-size: 16px;
+  color: #fff;
+  font-weight: 700px;
+  text-align: center;
+  background-color: #d4c17f;
+  transition: background-color 0.2s ease-in;
+}
+.feedback--form-button:hover {
+  background-color: #e5ca6e;
+}
