@@ -1,6 +1,13 @@
 .apartments {
-
+    position: relative;
     margin-top: -80px;
+
+    &::before {
+        content: "III";
+        right: calc(50% + 555px);
+        transform: translate(50%, 0%);
+        @include decorNumber;
+    }
 
     &--title {
         color: $accent;

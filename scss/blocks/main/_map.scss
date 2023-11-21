@@ -1,6 +1,15 @@
 .map {
+    position: relative;
     padding: 180px 0;
     margin: -200px 0;
+
+    &::before {
+        content: "V";
+        right: calc(50% + 555px);
+        transform: translate(50%, 0%);
+        @include decorNumber;
+        top: 180px;
+    }
 
     &--title {
         color: $accent;
