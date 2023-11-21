@@ -100,7 +100,7 @@ body {
   background: linear-gradient(180deg, #242b33 11.98%, rgba(45, 52, 60, 0.38) 51.04%, #242b33 92.19%), url("./../img/header/header-bg.jpg");
   background-repeat: repeat-x;
   background-color: #242b33;
-  background-size: auto 840px;
+  background-size: 1920px 840px;
   background-position: top;
 }
 
