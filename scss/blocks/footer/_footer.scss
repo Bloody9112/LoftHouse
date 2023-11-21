@@ -1,0 +1,39 @@
+.footer {
+    background-color: $footer-bg;
+    padding-top: 72px;
+    padding-bottom: 51px;
+    font-size: 14px;
+    letter-spacing: 0.7px;
+
+    &--grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 30px;
+
+        &-logo {
+            margin-top: -12px;
+        }
+    }
+
+    &--nav,
+    &--address {
+        display: grid;
+        gap: 20px;
+
+        &-list {
+            display: grid;
+            gap: 15px;
+        }
+
+        &-social {
+            display: flex;
+            align-items: center;
+            column-gap: 22px;
+        }
+
+        .link-bold {
+            color: $accent;
+            font-weight: 700;
+        }
+    }
+}

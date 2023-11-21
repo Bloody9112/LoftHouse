@@ -3,9 +3,11 @@
 @import './base/vars'; //визначаємо змінні
 @import './base/base';
 
-// Blocks 
+// Header 
 @import './blocks/header/header';
 @import './blocks/header/nav';
+
+// Main
 @import './blocks/main/main';
 @import './blocks/main/info';
 @import './blocks/main/benefits';
@@ -16,3 +18,5 @@
 @import './blocks/main/map';
 @import './blocks/main/feedback';
 
+// Footer
+@import './blocks/footer/footer';
