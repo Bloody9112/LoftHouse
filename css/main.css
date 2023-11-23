@@ -130,7 +130,10 @@ a:hover {
 }
 
 .no-scroll {
-  overflow-y: hidden;
+  overflow: hidden;
+  position: fixed;
+  height: 100%;
+  touch-action: none;
 }
 
 .header {

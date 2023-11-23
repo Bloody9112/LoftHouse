@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Raleway:wght@400;700&family=Roboto:wght@300&display=swap");
 
 body {
-    
     display: flex;
     flex-direction: column;
     font-family: $font-main;
@@ -54,5 +53,8 @@ a {
 }
 
 .no-scroll {
-    overflow-y: hidden;
+    overflow: hidden;
+    position: fixed;
+    height:100%;
+    touch-action: none;
 }
