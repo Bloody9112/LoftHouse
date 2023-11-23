@@ -1,6 +1,10 @@
 .feedback {
-
     padding-bottom: 180px;
+
+    @include mediaTablet {
+        padding-bottom: 90px;
+        margin: 0 10px;
+    }
 
     &--title {
         color: $accent;
@@ -8,6 +12,11 @@
         font-size: 36px;
         font-weight: 700;
         margin-bottom: 38px;
+
+        @include mediaTablet {
+            font-size: 28px;
+            margin-bottom: 19px;
+        }
     }
 
     &--form {
@@ -15,6 +24,11 @@
         grid-template-columns: repeat(4, 1fr);
         gap: 30px;
         align-items: center;
+
+        @include mediaTablet {
+            grid-template-columns: 1fr;
+            gap: 25px;
+        }
 
         &-input {
             height: 50px;
@@ -39,6 +53,10 @@
             color: $privacy;
             text-align: center;
             line-height: 16px; /* 123.077% */
+
+            @include mediaTablet {
+                grid-row: 4 / 5;
+            }
         }
 
         &-button {

@@ -10,12 +10,14 @@ body {
     font-size: 16px;
     padding-top: 30px;
 
-    overflow-x: hidden;
-	scrollbar-width: none;
-    -ms-overflow-style: none;
-
+    overflow-x: clip;
     min-height: 840px;
 
+    @include mediaTablet {
+        min-height: unset;
+        background-size: 1920px 555px;
+    }
+    
     background: linear-gradient(
 			180deg,
 			#242b33 11.98%,
@@ -49,4 +51,8 @@ a {
 
 .none {
     display: none !important;
+}
+
+.no-scroll {
+    overflow-y: hidden;
 }

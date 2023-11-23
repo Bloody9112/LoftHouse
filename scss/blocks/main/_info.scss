@@ -2,6 +2,14 @@
     position: relative;
     font-size: 18px;
 
+    @include mediaTablet {
+        font-size: 14px;
+
+        &--map, &--tel {
+            padding-left: 26px;
+    }
+}
+
     &--map, &--tel {
         padding-left: 35px;
 

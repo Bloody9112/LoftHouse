@@ -3,6 +3,10 @@
     flex-direction: column;
     gap: 200px;
 
+    @include mediaTablet {
+        gap: 50px;
+    }
+
     &--first-screen_title {
         position: relative;
         padding-bottom: 121px;
@@ -11,8 +15,12 @@
         font-family: $font-accent;
         color: $accent;
         font-weight: 700;
+
+        @include mediaTablet {
+            font-size: 32px;
+        }
     }
-    
+
     &--title-icon {
         position: absolute;
         bottom: 0;
@@ -23,7 +31,16 @@
     &--first-screen_buttons {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        gap: 50px;  
+        gap: 30px;
+
+        @include mediaTablet {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            row-gap: 30px;
+        }
+
+
     }
 
     &--buttons-text-right {

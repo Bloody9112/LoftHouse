@@ -3,6 +3,12 @@
     padding: 180px 0;
     margin: -200px 0;
 
+    @include mediaTablet {
+        margin: -50px 0;
+        padding: 90px 10px;
+
+    }
+
     &::before {
         content: "V";
         right: calc(50% + 555px);
@@ -17,16 +23,16 @@
         font-size: 36px;
         font-weight: 700;
         margin-bottom: 88px;
+
+        @include mediaTablet {
+            margin-bottom: 44px;
+        }
     }
 
     &--location {
-
         &-geo {
             height: 350px;
             background: #626262;
         }
-
     }
-
-
 }

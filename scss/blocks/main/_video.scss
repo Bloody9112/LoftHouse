@@ -2,6 +2,13 @@
     position: relative;
     text-align: center;
     margin-top: -200px;
+    overflow: hidden;
+
+    @include mediaTablet {
+        margin-top: -50px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
 
     &::after {
         content: "IV";
@@ -38,6 +45,11 @@
         top: 50%;
         transform: translate(-50%, -50%);
         transition: all 0.2s ease-in;
+
+        @include mediaTablet {
+            height: 80px;
+            width: 80px;
+        }
 
         .video--link:hover & {
             transform: translate(-50%, -50%) scale(1.1);

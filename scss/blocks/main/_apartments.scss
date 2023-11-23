@@ -2,6 +2,10 @@
     position: relative;
     margin-top: -80px;
 
+    @include mediaTablet {
+        margin-top: 20px;
+    }
+
     &::before {
         content: "III";
         right: calc(50% + 555px);
@@ -15,6 +19,12 @@
         font-size: 36px;
         font-weight: 700;
         margin-bottom: 88px;
+
+        @include mediaTablet {
+            font-size: 28px;
+            margin-bottom: 40px;
+            margin-left: 10px;
+        }
     }
 
     &--cards {
@@ -22,5 +32,11 @@
         grid-template-columns: 1fr 1fr;
         // grid-template-columns: repeat(auto-fit, minmax(290px, 1fr)); // Варіант з адаптивом під мобілку
         gap: 30px;
+
+        @include mediaTablet {
+            font-size: 28px;
+            grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+            margin: 0 10px;
+        }
     }
 }
