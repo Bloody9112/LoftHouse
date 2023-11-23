@@ -208,7 +208,8 @@ a:hover {
 @media screen and (max-width: 999px) {
   .header--logo-image {
     padding-left: 5px;
-    padding-bottom: 10px;
+    padding-bottom: 15px;
+    padding-top: 5px;
   }
 }
 
@@ -267,7 +268,7 @@ a:hover {
 }
 .header--menu-btn:not(.header--menu-icon--active) {
   position: fixed;
-  top: 25px;
+  top: 27.5px;
   right: 25px;
 }
 
