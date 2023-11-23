@@ -14,6 +14,13 @@ $btn-color: #fff;
   z-index: 999;
   backdrop-filter: blur(25px);
 
+  @include mediaTablet {
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    border-radius: 2.5px;
+    border-radius: 2.5px;
+}
+
   .header--menu-icon {
     position: relative;
     width: $btn-width;
@@ -22,14 +29,16 @@ $btn-color: #fff;
 
     &::before,
     &::after {
-      content: '';
+      content: "";
       display: block;
       position: absolute;
       left: 0;
       width: $btn-width;
       height: $btn-line-height;
       background-color: $btn-color;
-      transition: transform $btn-time ease-in, top $btn-time linear $btn-time;
+      transition:
+        transform $btn-time ease-in,
+        top $btn-time linear $btn-time;
     }
 
     &::before {
@@ -47,7 +56,9 @@ $btn-color: #fff;
     &::before,
     &::after {
       top: 0;
-      transition: top $btn-time linear, transform $btn-time ease-in $btn-time;
+      transition:
+        top $btn-time linear,
+        transform $btn-time ease-in $btn-time;
     }
 
     &::before {

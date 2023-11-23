@@ -13,6 +13,12 @@
         flex-wrap: wrap;
         gap: 30px;
 
+        @include mediaTablet {
+            position: fixed;
+            width: 100%;
+            z-index: 999;
+        }
+
         &--mobile {
             position: fixed;
             z-index: 9;
@@ -34,7 +40,6 @@
                 display: block;
 
                 .nav {
-
                     &--list {
                         flex-direction: column;
                         align-items: center;
@@ -68,5 +73,15 @@
 
         //     }
         // }
+    }
+
+    &--logo-image {
+        
+        @include mediaTablet {
+            -webkit-backdrop-filter: blur(15px);
+            backdrop-filter: blur(15px);
+            border-radius: 5px;
+            border-radius: 5px;
+        }
     }
 }
