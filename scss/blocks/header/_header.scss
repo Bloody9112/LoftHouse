@@ -3,7 +3,7 @@
 
     @include mediaTablet {
         margin-bottom: 50px;
-        padding: 0 10px;
+        margin-top: -30px;
     }
 
     &--top-row {
@@ -16,7 +16,12 @@
         @include mediaTablet {
             position: fixed;
             width: 100%;
+            margintop: -50px;
             z-index: 999;
+            -webkit-backdrop-filter: blur(15px);
+            backdrop-filter: blur(15px);
+            border-radius: 5px;
+            border-radius: 5px;
         }
 
         &--mobile {
@@ -66,22 +71,12 @@
         @include mediaTablet {
             display: block;
         }
-
-        // &-button {
-
-        //     &_icon {
-
-        //     }
-        // }
     }
 
     &--logo-image {
-        
         @include mediaTablet {
-            -webkit-backdrop-filter: blur(15px);
-            backdrop-filter: blur(15px);
-            border-radius: 5px;
-            border-radius: 5px;
+           padding-left: 5px;
+           padding-bottom: 10px;
         }
     }
 }

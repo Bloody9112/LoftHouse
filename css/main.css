@@ -131,7 +131,6 @@ a:hover {
 
 .no-scroll {
   overflow: hidden;
-  position: fixed;
   height: 100%;
   touch-action: none;
 }
@@ -142,7 +141,7 @@ a:hover {
 @media screen and (max-width: 999px) {
   .header {
     margin-bottom: 50px;
-    padding: 0 10px;
+    margin-top: -30px;
   }
 }
 .header--top-row {
@@ -156,7 +155,12 @@ a:hover {
   .header--top-row {
     position: fixed;
     width: 100%;
+    margintop: -50px;
     z-index: 999;
+    -webkit-backdrop-filter: blur(15px);
+    backdrop-filter: blur(15px);
+    border-radius: 5px;
+    border-radius: 5px;
   }
 }
 .header--top-row--mobile {
@@ -202,10 +206,8 @@ a:hover {
 }
 @media screen and (max-width: 999px) {
   .header--logo-image {
-    -webkit-backdrop-filter: blur(15px);
-    backdrop-filter: blur(15px);
-    border-radius: 5px;
-    border-radius: 5px;
+    padding-left: 5px;
+    padding-bottom: 10px;
   }
 }
 
@@ -226,14 +228,6 @@ a:hover {
   align-items: center;
   z-index: 999;
   backdrop-filter: blur(25px);
-}
-@media screen and (max-width: 999px) {
-  .header--menu-btn {
-    -webkit-backdrop-filter: blur(5px);
-    backdrop-filter: blur(5px);
-    border-radius: 2.5px;
-    border-radius: 2.5px;
-  }
 }
 .header--menu-btn .header--menu-icon {
   position: relative;
@@ -272,7 +266,7 @@ a:hover {
 }
 .header--menu-btn:not(.header--menu-icon--active) {
   position: fixed;
-  top: 50px;
+  top: 25px;
   right: 25px;
 }
 

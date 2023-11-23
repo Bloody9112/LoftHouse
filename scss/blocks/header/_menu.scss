@@ -14,12 +14,12 @@ $btn-color: #fff;
   z-index: 999;
   backdrop-filter: blur(25px);
 
-  @include mediaTablet {
-    -webkit-backdrop-filter: blur(5px);
-    backdrop-filter: blur(5px);
-    border-radius: 2.5px;
-    border-radius: 2.5px;
-}
+  // @include mediaTablet {
+  //   -webkit-backdrop-filter: blur(5px);
+  //   backdrop-filter: blur(5px);
+  //   border-radius: 2.5px;
+  //   border-radius: 2.5px;
+  // }
 
   .header--menu-icon {
     position: relative;
@@ -72,7 +72,7 @@ $btn-color: #fff;
 
   &:not(.header--menu-icon--active) {
     position: fixed;
-    top: 50px;
+    top: 25px;
     right: 25px;
   }
 }
