@@ -131,6 +131,7 @@ a:hover {
 
 .no-scroll {
   overflow: hidden;
+  display: fixed;
   height: 100%;
   touch-action: none;
 }
